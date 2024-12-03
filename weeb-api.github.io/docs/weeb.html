@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from weeb-api.github.io/docs/weeb by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 03 Dec 2024 08:36:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Weeb Endpoints | Weeb-API Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Weeb Endpoints" />
+<meta name="author" content="AliAryanTech" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Free to use public API without any need for authorization :)" />
+<meta property="og:description" content="Free to use public API without any need for authorization :)" />
+<link rel="canonical" href="weeb.html" />
+<meta property="og:url" content="weeb.html" />
+<meta property="og:site_name" content="Weeb-API Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Weeb Endpoints" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AliAryanTech"},"description":"Free to use public API without any need for authorization :)","headline":"Weeb Endpoints","url":"https://weeb-api.github.io/docs/weeb"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="assets/main.css"><link type="application/atom+xml" rel="alternate" href="feed.xml" title="Weeb-API Documentation" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="index.html">Weeb-API Documentation</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="index.html">Weeb-API</a><a class="page-link" href="carbon.html">Carbon Parameters</a><a class="page-link" href="entertainment.html">Entertainment Endpoints</a><a class="page-link" href="misc.html">Misc Endpoints</a><a class="page-link" href="weeb.html">Weeb Endpoints</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Weeb Endpoints</h1>
+  </header>
+
+  <div class="post-content">
+    <hr />
+<h2 id="anime">/anime</h2>
+<h3 id="http-request">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/anime?search=Rent-A-Girlfriend</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>search</td>
+      <td>true</td>
+      <td>Anime information from Anilist</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">113813</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"idMal"</span><span class="p">:</span><span class="mi">40839</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:{</span><span class="w">
+         </span><span class="nl">"romaji"</span><span class="p">:</span><span class="s2">"Kanojo, Okarishimasu"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"english"</span><span class="p">:</span><span class="s2">"Rent-a-Girlfriend"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"native"</span><span class="p">:</span><span class="s2">"彼女、お借りします"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"FINISHED"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"hashtag"</span><span class="p">:</span><span class="s2">"#彼女お借りします #かのかり"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"format"</span><span class="p">:</span><span class="s2">"TV"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"isAdult"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"season"</span><span class="p">:</span><span class="s2">"SUMMER"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"averageScore"</span><span class="p">:</span><span class="mi">68</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"popularity"</span><span class="p">:</span><span class="mi">204948</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"source"</span><span class="p">:</span><span class="s2">"MANGA"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="mi">24</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"episodes"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"genres"</span><span class="p">:[</span><span class="w">
+         </span><span class="s2">"Comedy"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Drama"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Romance"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"startDate"</span><span class="p">:</span><span class="s2">"11-7-2020"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"endDate"</span><span class="p">:</span><span class="s2">"26-9-2020"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"studios"</span><span class="p">:</span><span class="s2">"TMS Entertainment, DMM pictures, Kodansha, Mainichi Broadcasting System, Crunchyroll"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"trailer"</span><span class="p">:{</span><span class="w">
+         </span><span class="nl">"id"</span><span class="p">:</span><span class="s2">"jZFEtc3CKHs"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"site"</span><span class="p">:</span><span class="s2">"youtube"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="s2">"https://i.ytimg.com/vi/jZFEtc3CKHs/hqdefault.jpg"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"siteUrl"</span><span class="p">:</span><span class="s2">"https://anilist.co/anime/113813"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"imageUrl"</span><span class="p">:</span><span class="s2">"https://img.anili.st/media/113813"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"bannerImage"</span><span class="p">:</span><span class="s2">"https://s4.anilist.co/file/anilistcdn/media/anime/banner/113813-Al8VofQuNQHV.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"coverImage"</span><span class="p">:</span><span class="s2">"https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113813-UCgSIGyWvLgl.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"In today’s Japan, “rental” services can deliver an afternoon with a “friend,” a “parent,” even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. But he quickly discovers how complicated it can be to “rent” an emotional connection, and his new “girlfriend,” who’s trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya’s are intertwined in surprising ways! Family, school, and life all start to go wrong, too…</span><span class="se">\n</span><span class="s2">&lt;br&gt;&lt;br&gt;</span><span class="se">\n</span><span class="s2">(Source: Kodansha USA)"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="character">/character</h2>
+<h3 id="http-request-1">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/character?search=Mizuhara</code></p>
+
+<h3 id="query-parameters-1">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>search</td>
+      <td>true</td>
+      <td>Character information from Anilist</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">128106</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:{</span><span class="w">
+         </span><span class="nl">"full"</span><span class="p">:</span><span class="s2">"Chizuru Ichinose"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"native"</span><span class="p">:</span><span class="s2">"一ノ瀬ちづる"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"age"</span><span class="p">:</span><span class="s2">"19-20"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"gender"</span><span class="p">:</span><span class="s2">"Female"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"bloodType"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"dateOfBirth"</span><span class="p">:</span><span class="s2">"19-4-null"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"image"</span><span class="p">:</span><span class="s2">"https://s4.anilist.co/file/anilistcdn/character/large/b128106-zSTsuULvz6PX.png"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"siteUrl"</span><span class="p">:</span><span class="s2">"https://anilist.co/character/128106"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"__Height:__ 162 cm</span><span class="se">\n\n</span><span class="s2">Chizuru Ichinose, alternatively known as Chizuru Mizuhara in her </span><span class="se">\"</span><span class="s2">rental girlfriend</span><span class="se">\"</span><span class="s2"> persona, is a college student at Nerima University who is majoring in Literature and she currently lives in Room 204 of Royal Hills Nerima, just next to [Kazuya Kinoshita](https://anilist.co/character/128105/Kazuya-Kinoshita)."</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="loli">/loli</h2>
+<h3 id="http-request-2">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/loli</code></p>
+
+<h3 id="response-buffer">Response Buffer</h3>
+<blockquote>
+  <p>The response Buffer would be like this:
+<img src="../../vip1.loli.io/2022/05/11/MyCZS57arxlBH1m.jpg" alt="Buffer.png" />
+—</p>
+</blockquote>
+
+<h2 id="manga">/manga</h2>
+<h3 id="http-request-3">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/manga?search=Rent-A-Girlfriend</code></p>
+
+<h3 id="query-parameters-2">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>search</td>
+      <td>true</td>
+      <td>Manga information from Anilist</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">99943</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"idMal"</span><span class="p">:</span><span class="mi">108407</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:{</span><span class="w">
+         </span><span class="nl">"romaji"</span><span class="p">:</span><span class="s2">"Kanojo, Okarishimasu"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"english"</span><span class="p">:</span><span class="s2">"Rent-A-Girlfriend"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"native"</span><span class="p">:</span><span class="s2">"彼女、お借りします"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"RELEASING"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"format"</span><span class="p">:</span><span class="s2">"MANGA"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"isAdult"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"averageScore"</span><span class="p">:</span><span class="mi">62</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"source"</span><span class="p">:</span><span class="s2">"ORIGINAL"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"genres"</span><span class="p">:[</span><span class="w">
+         </span><span class="s2">"Comedy"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Drama"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Ecchi"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Romance"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"startDate"</span><span class="p">:</span><span class="s2">"12-7-2017"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"endDate"</span><span class="p">:</span><span class="s2">"null-null-null"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"volumes"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"chapters"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"trailer"</span><span class="p">:{</span><span class="w">
+         </span><span class="nl">"id"</span><span class="p">:</span><span class="s2">"XoaOzvlf19Q"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"site"</span><span class="p">:</span><span class="s2">"youtube"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="s2">"https://i.ytimg.com/vi/XoaOzvlf19Q/hqdefault.jpg"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"siteUrl"</span><span class="p">:</span><span class="s2">"https://anilist.co/manga/99943"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"imageUrl"</span><span class="p">:</span><span class="s2">"https://img.anili.st/media/99943"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"bannerImage"</span><span class="p">:</span><span class="s2">"https://s4.anilist.co/file/anilistcdn/media/manga/banner/99943-bs6PEAZgj1wy.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"coverImage"</span><span class="p">:</span><span class="s2">"https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx99943-0tJ6oNhn3xet.png"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"In today’s Japan, “rental” services can deliver an afternoon with a “friend,” a “parent,” even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. But he quickly discovers how complicated it can be to “rent” an emotional connection, and his new “girlfriend,” who’s trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya’s are intertwined in surprising ways! Family, school, and life all start to go wrong, too… It’s sweet but naïve boy meets cute but ruthless girl in this 21st-century manga rom-com!</span><span class="se">\n</span><span class="s2">&lt;br&gt;&lt;br&gt;</span><span class="se">\n</span><span class="s2">(Source: Kodansha USA)"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="neko">/neko</h2>
+<h3 id="http-request-4">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/neko</code></p>
+
+<h3 id="response-buffer-1">Response Buffer</h3>
+<blockquote>
+  <p>The response Buffer would be like this:
+<img src="../../i.waifu.pics/uWB-nMh.jpg" alt="Buffer.png" />
+—</p>
+</blockquote>
+
+<h2 id="waifu">/waifu</h2>
+<h3 id="http-request-5">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/waifu</code></p>
+
+<h3 id="response-buffer-2">Response Buffer</h3>
+<blockquote>
+  <p>The response Buffer would be like this:
+<img src="../../telegra.ph/file/ea67c477911d9cfc6f877.jpg" alt="Buffer.png" />
+—</p>
+</blockquote>
+
+<h2 id="wallpaper">/wallpaper</h2>
+<h3 id="http-request-6">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/wallpaper?query=Naruto</code></p>
+
+<h3 id="query-parameters-3">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>query</td>
+      <td>true</td>
+      <td>Query to request search related wallpaper</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+   </span><span class="s2">"https://w.wallhaven.cc/full/47/wallhaven-47mzme.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2022/02/06/8/1644151789250329215.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2022/07/03/11/165687697111909022.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2022/07/03/11/1656876779231763535.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2023/03/15/7/1678877207162429047.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2022/07/03/11/16568769741862166.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs13.pikabu.ru/post_img/2023/04/11/8/1681218215372075414.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2023/04/11/8/168121821734156614.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2021/09/24/9/163249783812128810.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2022/06/19/5/165562283218184200.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2021/12/01/10/163837787215853815.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2023/04/11/8/1681218214337040667.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2022/07/03/11/1656876789176634692.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://w.wallhaven.cc/full/85/wallhaven-85ow6k.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2022/07/03/11/1656876961131938369.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs14.pikabu.ru/post_img/2022/07/03/11/1656876778145796622.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2022/06/19/5/1655622871188135176.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs12.pikabu.ru/post_img/2021/12/24/7/1640346688188144519.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://w.wallhaven.cc/full/0w/wallhaven-0wg7e7.png"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"https://cs13.pikabu.ru/post_img/2023/04/11/8/1681218219375058913.jpg"</span><span class="p">,</span><span class="w">
+   </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="zerotwo">/zerotwo</h2>
+<h3 id="http-request-7">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/zerotwo</code></p>
+
+<h3 id="response-buffer-3">Response Buffer</h3>
+<blockquote>
+  <p>The response Buffer would be like this:
+<img src="../../telegra.ph/file/aecacc8703f30dddcd1c5.jpg" alt="Buffer.png" /></p>
+</blockquote>
+
+<h2 id="zoroanime">/zoro/anime</h2>
+<h3 id="http-request-8">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/zoro/anime?url=https://zoro.to/naruto-the-movie-3-guardians-of-the-crescent-moon-kingdom-4005</code></p>
+
+<h3 id="query-parameters-4">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>Zoro Post URL</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Naruto Movie 3: Dai Koufun! Mikazuki Jima no Animaru Panikku Dattebayo!"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"japanese"</span><span class="p">:</span><span class="s2">"劇場版 NARUTO -ナルト- 大興奮!みかづき島のアニマル騒動だってばよ"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"synonyms"</span><span class="p">:</span><span class="s2">"Naruto Movie Volume 3, Naruto: Gekijouban Naruto: Dai Koufun! Mikazuki-jima no Animal Panic Datte ba yo!"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"aired"</span><span class="p">:</span><span class="s2">"Aug 5, 2006"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"premiered"</span><span class="p">:</span><span class="s2">"Fall 2006"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"1h 34m"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"Finished Airing"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"malScore"</span><span class="p">:</span><span class="s2">"6.9"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"genres"</span><span class="p">:</span><span class="s2">"Action, Adventure"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"studios"</span><span class="p">:</span><span class="s2">"Studio Pierrot"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"producers"</span><span class="p">:</span><span class="s2">"Studio Pierrot, Viz Media"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"Led by Kakashi Hatake, Naruto Uzumaki, Sakura Haruno, and Rock Lee are tasked to escort the extravagant Prince Michiru Tsuki and his spoiled son Hikaru to the prosperous Land of Moon when the two return from a long trip around the world. As if guarding two whimsical high-ranked individuals was not challenging enough, the prince's reckless decision to acquire an entire circus during their journey—mainly to entertain Hikaru's wish of owning the saber-toothed tiger featured in the show—further propels the mission into disarray.Just as things are finally settling down, the arrival of Michiru's convoy at the Land of Moon is met with an unforeseen crisis—the greedy Chief Minister Shabadaba has taken over the country with the assistance of mysterious, powerful ninjas. While Kakashi's team relentlessly fights the enemy by any means necessary, the two princes are forced to confront a new outlook on life through adversity.[Written by MAL Rewrite]"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="zorosearch">/zoro/search</h2>
+<h3 id="http-request-9">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/zoro/search?query=Naruto</code></p>
+
+<h3 id="query-parameters-5">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>query</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>Anime Name you want to search on Zoro</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Road of Naruto"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/road-of-naruto-18220"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"ONA"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"9m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/fd/41/fd414879634ea83ad2c4fc1c33e8ac43/fd414879634ea83ad2c4fc1c33e8ac43.jpg"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Boruto: Naruto Next Generations"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/boruto-naruto-next-generations-8143"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"TV"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"23m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/32/c8/32c83e2ad4a43229996356840db3982c/32c83e2ad4a43229996356840db3982c.jpg"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Naruto OVA2: The Lost Story - Mission: Protect the Waterfall Village"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/naruto-ova2-the-lost-story-mission-protect-the-waterfall-village-4538"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"Special"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"40m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/ed/2c/ed2ca489d8c438c880056ea507efc93c/ed2ca489d8c438c880056ea507efc93c.jpg"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Boruto: Naruto the Movie - The Day Naruto Became the Hokage"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/boruto-naruto-the-movie-the-day-naruto-became-the-hokage-1805"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"Special"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"10m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/b1/9c/b19c06fae70eab67b1f390ed3cd905d8/b19c06fae70eab67b1f390ed3cd905d8.jpg"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="zoropopular">/zoro/popular</h2>
+<h3 id="http-request-10">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/zoro/popular</code></p>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"One Piece"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"TV"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"24m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"episodes"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"image"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/54/90/5490cb32786d4f7fef0f40d7266df532/5490cb32786d4f7fef0f40d7266df532.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/one-piece-100"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"Gold Roger was known as the </span><span class="se">\"</span><span class="s2">Pirate King,</span><span class="se">\"</span><span class="s2"> the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King.</span><span class="se">\n\n</span><span class="s2">Enter Monkey Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes—One Piece.</span><span class="se">\n\n</span><span class="s2">[Written by MAL Rewrite]"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Naruto: Shippuden"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"TV"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"23m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"episodes"</span><span class="p">:</span><span class="s2">"500"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"image"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/naruto-shippuden-355"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the mysterious organization of elite rogue ninja, is closing in on their grand plan which may threaten the safety of the entire shinobi world.</span><span class="se">\n</span><span class="s2"> </span><span class="se">\n</span><span class="s2">Although Naruto is older and sinister events loom on the horizon, he has changed little in personality—still rambunctious and childish—though he is now far more confident and possesses an even greater determination to protect his friends and home. Come whatever may, Naruto will carry on with the fight for what is important to him, even at the expense of his own body, in the continuation of the saga about the boy who wishes to become Hokage.</span><span class="se">\n\n</span><span class="s2">[Written by MAL Rewrite]"</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"TV"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="s2">"24m"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"episodes"</span><span class="p">:</span><span class="s2">"11"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"image"</span><span class="p">:</span><span class="s2">"https://img.flawlessfiles.com/_r/300x400/100/db/2f/db2f3ce7b9cab7fdc160b005bffb899a/db2f3ce7b9cab7fdc160b005bffb899a.png"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://zoro.to/demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc-18056"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"It adapts the story from volume 12 (chapter 98 onwards) of the manga series </span><span class="se">\"</span><span class="s2">Demon Slayer: Kimetsu no Yaiba</span><span class="se">\"</span><span class="s2"> . The story takes place in a new setting - Tanjiro arrives at the </span><span class="se">\"</span><span class="s2">Swordsmith Village.</span><span class="se">\"</span><span class="s2"> After the death of Upper Moon Six and Daki, a vacancy appears among the upper moons, and Muzan Kibutsuji summons the remaining upper moons to the Infinity Castle. Muzan is furious about the vacancy and believes that the upper moons should do everything in their power to find the </span><span class="se">\"</span><span class="s2">Blue Spider Lily</span><span class="se">\"</span><span class="s2"> and eliminate the Demon Slayer Corps. As a result, Upper Moon Four, Hantengu, and Upper Moon Five, Gyokko, are dispatched to carry out the mission. Meanwhile, Tanjiro, who has been recovering from his injuries at the Butterfly Estate for two months, learns that Kozo Kanamori, the swordsmith, has refused to make him a new sword. Following the advice of the Hashira, Shinobu Kocho, Suma Nakahara, and Kiyo Terauchi, Tanjiro travels to the Swordsmith Village to conUpon arrival, he encounters the Love Hashira, Mitsuri Kanroji, and the Mist Hashira, Muichiro Tokito, as well as Genya Shinazugawa. Tanjiro and his companions are about to embark on a new battle. The opening theme song </span><span class="se">\"</span><span class="s2">Ketsui no Hikari</span><span class="se">\"</span><span class="s2"> is performed by MAN WITH A MISSION and milet. The lyrics and composition are by Jean-Ken Johnny, with arrangement by MAN WITH A MISSION and cooperation by Chisato Ichinose. The ending theme song </span><span class="se">\"</span><span class="s2">Koikogare</span><span class="se">\"</span><span class="s2"> is also performed by MAN WITH A MISSION and milet."</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="index.html"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">AliAryanTech</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="../../external.html?link=https://github.com/AliAryanTech"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#github"></use></svg> <span class="username">AliAryanTech</span></a></li><li><a href="../../external.html?link=https://www.twitter.com/AliAryanTech"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AliAryanTech</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Free to use public API without any need for authorization :)</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+<!-- Mirrored from weeb-api.github.io/docs/weeb by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 03 Dec 2024 08:38:25 GMT -->
+</html>

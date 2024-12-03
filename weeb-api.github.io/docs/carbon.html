@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from weeb-api.github.io/docs/carbon by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 03 Dec 2024 08:36:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Carbon Parameters | Weeb-API Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Carbon Parameters" />
+<meta name="author" content="AliAryanTech" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Free to use public API without any need for authorization :)" />
+<meta property="og:description" content="Free to use public API without any need for authorization :)" />
+<link rel="canonical" href="carbon.html" />
+<meta property="og:url" content="carbon.html" />
+<meta property="og:site_name" content="Weeb-API Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Carbon Parameters" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AliAryanTech"},"description":"Free to use public API without any need for authorization :)","headline":"Carbon Parameters","url":"https://weeb-api.github.io/docs/carbon"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="assets/main.css"><link type="application/atom+xml" rel="alternate" href="feed.xml" title="Weeb-API Documentation" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="index.html">Weeb-API Documentation</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="index.html">Weeb-API</a><a class="page-link" href="carbon.html">Carbon Parameters</a><a class="page-link" href="entertainment.html">Entertainment Endpoints</a><a class="page-link" href="misc.html">Misc Endpoints</a><a class="page-link" href="weeb.html">Weeb Endpoints</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Carbon Parameters</h1>
+  </header>
+
+  <div class="post-content">
+    <hr />
+<h3 id="querybody-parameters">Query/Body Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>parameter</th>
+      <th>default</th>
+      <th>type</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code> (required)</td>
+      <td> </td>
+      <td>string</td>
+      <td>code snippet</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">backgroundColor</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"rgba(171, 184, 195, 1)"</code></td>
+      <td>string</td>
+      <td>hex or rgba color</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dropShadow</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>boolean</td>
+      <td>turn on/off shadow</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dropShadowBlurRadius</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"68px"</code></td>
+      <td>string</td>
+      <td>shadow blur radius</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dropShadowOffsetY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"20px"</code></td>
+      <td>string</td>
+      <td>shadow offset y</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">exportSize</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"2x"</code></td>
+      <td>string</td>
+      <td>resolution of exported image, e.g. <code class="language-plaintext highlighter-rouge">1x</code>, <code class="language-plaintext highlighter-rouge">4x</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fontCustom</code></td>
+      <td><code class="language-plaintext highlighter-rouge">""</code></td>
+      <td>string</td>
+      <td>custom woff font’s contents, encoded in base64</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fontSize</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"14px"</code></td>
+      <td>string</td>
+      <td>font size</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fontFamily</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"Hack"</code></td>
+      <td>string</td>
+      <td>font family, e.g. <code class="language-plaintext highlighter-rouge">JetBrains Mono</code>, <code class="language-plaintext highlighter-rouge">Fira Code</code>. See all names in carbon.(Click gear → <code class="language-plaintext highlighter-rouge">misc</code> → <code class="language-plaintext highlighter-rouge">export config</code> for downloading JSON with the current setting)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">firstLineNumber</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td>number</td>
+      <td>first line number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">language</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"auto"</code></td>
+      <td>string</td>
+      <td>programing language for properly highlighting. See name in carbon. (Click gear → <code class="language-plaintext highlighter-rouge">misc</code> → <code class="language-plaintext highlighter-rouge">export config</code> for downloading JSON with the current setting) For example bash is named <code class="language-plaintext highlighter-rouge">"application/x-sh"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lineHeight</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"133%"</code></td>
+      <td>string</td>
+      <td>line height</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lineNumbers</code></td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+      <td>boolean</td>
+      <td>turn on/off line number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">paddingHorizontal</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"56px"</code></td>
+      <td>string</td>
+      <td>horizontal padding</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">paddingVertical</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"56px"</code></td>
+      <td>string</td>
+      <td>vertical padding</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">prettify</code></td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+      <td>boolean</td>
+      <td>prettify code with prettier. It works with javascript snippets only, like in carbon.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">theme</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"seti"</code></td>
+      <td>string</td>
+      <td>code theme</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">watermark</code></td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+      <td>boolean</td>
+      <td>turn on/off watermark</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">width</code></td>
+      <td><code class="language-plaintext highlighter-rouge">536</code></td>
+      <td>number</td>
+      <td>specify the width of the screenshot</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">widthAdjustment</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>boolean</td>
+      <td>turn on/off width adjustment</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">windowControls</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>boolean</td>
+      <td>turn on/off window controls</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">windowTheme</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"none"</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"none"</code> <code class="language-plaintext highlighter-rouge">"sharp"</code> <code class="language-plaintext highlighter-rouge">"bw"</code></td>
+      <td>window theme</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Defaults params</strong> are the same as https://carbon.now.sh.</p>
+
+<p><strong>Response</strong> is an image of a code snippet.</p>
+
+<hr />
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="index.html"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">AliAryanTech</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="../../external.html?link=https://github.com/AliAryanTech"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#github"></use></svg> <span class="username">AliAryanTech</span></a></li><li><a href="../../external.html?link=https://www.twitter.com/AliAryanTech"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AliAryanTech</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Free to use public API without any need for authorization :)</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+<!-- Mirrored from weeb-api.github.io/docs/carbon by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 03 Dec 2024 08:36:18 GMT -->
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from weeb-api.github.io/docs/entertainment by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 03 Dec 2024 08:36:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Entertainment Endpoints | Weeb-API Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Entertainment Endpoints" />
+<meta name="author" content="AliAryanTech" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Free to use public API without any need for authorization :)" />
+<meta property="og:description" content="Free to use public API without any need for authorization :)" />
+<link rel="canonical" href="entertainment.html" />
+<meta property="og:url" content="entertainment.html" />
+<meta property="og:site_name" content="Weeb-API Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Entertainment Endpoints" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AliAryanTech"},"description":"Free to use public API without any need for authorization :)","headline":"Entertainment Endpoints","url":"https://weeb-api.github.io/docs/entertainment"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="assets/main.css"><link type="application/atom+xml" rel="alternate" href="feed.xml" title="Weeb-API Documentation" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="index.html">Weeb-API Documentation</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="index.html">Weeb-API</a><a class="page-link" href="carbon.html">Carbon Parameters</a><a class="page-link" href="entertainment.html">Entertainment Endpoints</a><a class="page-link" href="misc.html">Misc Endpoints</a><a class="page-link" href="weeb.html">Weeb Endpoints</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Entertainment Endpoints</h1>
+  </header>
+
+  <div class="post-content">
+    <hr />
+<h2 id="quotly">/quotly</h2>
+<h3 id="http-request">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/quotly?pfp=https://telegra.ph/file/e991bb4b535a0f1425aa0.jpg&amp;username=Texas&amp;text=Hello_World</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pfp</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>profile pic url</td>
+    </tr>
+    <tr>
+      <td>username</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>your username</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>your text message</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="response-buffer">Response Buffer</h3>
+<blockquote>
+  <p>The response Buffer would be like this:
+<img src="../../telegra.ph/file/ceff40e9d9d0c3f8c3a50.png" alt="Buffer.png" />
+—</p>
+</blockquote>
+
+<h2 id="stickerly">/stickerly</h2>
+<h3 id="http-request-1">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/stickerly?url=https://sticker.ly/s/8QURB5</code></p>
+
+<h3 id="query-parameters-1">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>stickerly pack url</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"Xiao Li Zi"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"author"</span><span class="p">:</span><span class="s2">"nyaughh"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"animated"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"stickers"</span><span class="p">:[</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183512308.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183513727.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183514481.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183515308.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183516554.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183517282.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183517989.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183518780.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1679183520259.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1886130073.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1887832010.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/-1611182082.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750409570.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750410891.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750411504.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750412260.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750413060.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750413736.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750414644.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750415446.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750734989.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750735484.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681750735913.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681751050187.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681751050888.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/1681751051616.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/468254801.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/527452586.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/554076939.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://stickerly.pstatic.net/sticker_pack/ZNxQnuKljwMjq6MOz72LA/8QURB5/45/604849415.png"</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="telesticker">/telesticker</h2>
+<h3 id="http-request-2">HTTP Request</h3>
+<p><code class="language-plaintext highlighter-rouge">GET https://weeb-api.vercel.app/telesticker?url=https://t.me/addstickers/Capoo_Video2</code></p>
+
+<h3 id="query-parameters-2">Query Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>true</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>telegram sticker pack url</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>The response schema would be like this:</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"Capoo_Video2"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"title"</span><span class="p">:</span><span class="s2">"咖波 視像② @Capoo_Stickers"</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"is_animated"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"is_video"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="nl">"stickers"</span><span class="p">:[</span><span class="err">...</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<hr />
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="index.html"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">AliAryanTech</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="../../external.html?link=https://github.com/AliAryanTech"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#github"></use></svg> <span class="username">AliAryanTech</span></a></li><li><a href="../../external.html?link=https://www.twitter.com/AliAryanTech"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AliAryanTech</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Free to use public API without any need for authorization :)</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+<!-- Mirrored from weeb-api.github.io/docs/entertainment by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 03 Dec 2024 08:36:19 GMT -->
+</html>
